@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/timeLeftTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="#fffc5b"
+        android:text="timeleft"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/fractionRightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="#ffaf5b"
+        android:text="fractioncorrect"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/equationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/timeLeftTextView"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textSize="40sp" />
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="220dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="OnClick"
+            android:text="Button"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@android:color/holo_green_light"
+            android:onClick="OnClick"
+            android:text="Button"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="#ffc1ea"
+            android:onClick="OnClick"
+            android:text="Button"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@android:color/holo_red_light"
+            android:onClick="OnClick"
+            android:text="Button"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/finalScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="219dp"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="141dp"
+        android:onClick="goOnClick"
+        android:text="Play Again" />
+
+    <TextView
+        android:id="@+id/feedbackTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/finalScoreTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#0be248"
+        android:onClick="goOnClick"
+        android:padding="20dp"
+        android:text="GO!"
+        android:textSize="150sp" />
+
+    <TextView
+        android:id="@+id/timesUpNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Times Up!"
+        android:textSize="35sp" />
+
+</RelativeLayout>
